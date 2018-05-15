@@ -37,6 +37,7 @@ LOCAL_CFLAGS += -DDEFAULT_DENOISE_MODE_ON
 LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../stack/common \
         frameworks/native/include \
+        frameworks/native/libs/nativewindow/include/ \
         frameworks/native/include/media/openmax \
         $(call project-path-for,qcom-display)/libgralloc \
         $(call project-path-for,qcom-display)/libqdutils \
@@ -46,7 +47,7 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../../mm-image-codec/qomx_core \
         $(LOCAL_PATH)/../util \
         $(LOCAL_PATH)/wrapper \
-        system/media/camera/include
+        system/media/camera/include \
         $(TARGET_OUT_HEADERS)/qcom/display
 
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
